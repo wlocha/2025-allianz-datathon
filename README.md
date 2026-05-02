@@ -1,8 +1,14 @@
-# 2026 Ultimate Skiing Trip by Data Science 🎿
+# 2025 Ultimate Skiing Trip by Data Science 🎿
 
 > *"Four broke uni students from Monash with zero skiing experience walked into a datathon. They came out with a flight booked to Mt. Stirling."*
 
-**Team HDCML (How Deep Can Monkeys Learn)** | [Inter-University Datathon 2026](https://www.allianz.com.au)
+**Team HDCML (How Deep Can Monkeys Learn)** | Inter-University Datathon 2025
+
+---
+
+## About This Repository
+
+The original notebook was submitted during the datathon itself under time pressure. After the competition, I took the initiative to revisit the project independently — cleaning up the code, removing redundancies, standardising the analysis structure, and adding proper documentation. The original submission is preserved on the main branch. This branch (`improved`) reflects my own post-datathon improvements.
 
 ---
 
@@ -31,13 +37,13 @@ Using historical visitation data (2014–2024) and publicly available resort inf
 
 ### Step 2 — Week Selection (ML Forecasting)
 
-With Mt. Stirling locked in, we needed the optimal week. We modelled the 2026 ski season using three approaches:
+With Mt. Stirling locked in, we needed the optimal week. We modelled the 2025 ski season using three approaches:
 
 - **Prophet** — Facebook's time-series forecasting library; great at capturing annual temperature seasonality and long-term trends
 - **LSTM** — a recurrent neural network for comparison; struggled with long seasonal cycles but included for the vibes
 - **Hybrid RF + XGBoost** — a Random Forest classifier (rain/no rain?) followed by an XGBoost regressor (how much rain?) for rainfall forecasting
 
-The models agreed: **Week 3 of the 2026 ski season** is the sweet spot — cold enough for good snow, low crowds, and (relatively) less rain.
+The models agreed: **Week 3 of the 2025 ski season** is the sweet spot — cold enough for good snow, low crowds, and (relatively) less rain.
 
 ---
 
@@ -46,7 +52,7 @@ The models agreed: **Week 3 of the 2026 ski season** is the sweet spot — cold 
 - **BOM Climate Data** — daily temperature and rainfall records from 7 weather stations near Australian ski resorts (2010–2024)
 - **Resort Visitation Data** — weekly visitor counts across 9 resorts (2014–2024)
 
-Both datasets were provided by **Allianz** for the Inter-University Datathon 2026 and are **not included in this repository** (see `.gitignore`).
+Both datasets were provided by **Allianz** for the Inter-University Datathon 2025 and are **not included in this repository** (see `.gitignore`).
 
 ---
 
