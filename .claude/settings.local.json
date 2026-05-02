@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; nb=json.load\\(open\\('Ski \\(2\\) \\(2\\).ipynb'\\)\\); print\\(f'nbformat: {nb[\\\\\"nbformat\\\\\"]}, cells: {len\\(nb[\\\\\"cells\\\\\"]\\)}'\\); print\\('Keys:', list\\(nb.keys\\(\\)\\)\\)\")",
+      "Bash(where python3 *)",
+      "Bash(where py *)",
+      "Bash(where python *)",
+      "Bash(python3 -c \"import json; nb=json.load\\(open\\('Ski \\(2\\) \\(2\\).ipynb'\\)\\); print\\('nbformat:', nb['nbformat']\\); print\\('cells:', len\\(nb['cells']\\)\\); print\\('cell types:', [\\(i, c['cell_type'], c['source'][:50] if c['source'] else ''\\) for i,c in enumerate\\(nb['cells']\\)]\\)\")"
+    ]
+  }
+}

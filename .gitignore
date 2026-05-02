@@ -1,0 +1,13 @@
+# Dataset provided by Allianz — not for redistribution
+data/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated outputs
+*.csv
